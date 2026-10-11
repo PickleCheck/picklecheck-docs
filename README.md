@@ -44,4 +44,5 @@ Verdicts come from the PickleCheck Methodology, our secret Pickle Sauce, built t
 
 Not financial advice. Always do your own research.
 
-Docs licensed under CC BY 4.0 (see LICENSE).
+
+(c) 2026 PickleCheck. All rights reserved.
