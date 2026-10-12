@@ -32,8 +32,10 @@ By CheesePickleBot. Scam and rug checks for Base tokens, built for trading and s
 
     GET https://picklecheck.onrender.com/scam-check?target=TOKEN_ADDRESS
 
+Add `&quick=1` for a fast ~5-second check.
+
 - About 10 free checks a day, then $0.008 USDC per check on Base via x402. No signup, no API key.
-- `quick=1`: fast mode (~3s). Returns the sell test, taxes, liquidity and verdict.
+- `quick=1`: fast mode (~3-5s). Same checks minus holders: liquidity, sell test, taxes, contract controls. Skipped facts are null, never assumed safe.
 - `amount_usd=250`: price impact at your trade size.
 - `action`: `OK`, `CAUTION`, `AVOID` or `VERIFY_MORE` (data is missing, so check again before buying).
 - CAUTION comes with a Risk score (0-100, lower is safer). Set your own cutoff for your strategy.
