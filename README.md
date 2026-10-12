@@ -39,7 +39,7 @@ Add `&quick=1` for a fast ~5-second check.
 - `amount_usd=250`: price impact at your trade size.
 - `action`: `OK`, `CAUTION`, `AVOID` or `VERIFY_MORE` (data is missing, so check again before buying).
 - CAUTION comes with a Risk score (0-100, lower is safer). Set your own cutoff for your strategy.
-- Key fields (in the `fields` object; null = not checked or not applicable; see the reason field, e.g. `can_sell_reason`): `action`, `score` (risk 0-100, lower is safer), `can_sell`, `buy_tax_pct`, `sell_tax_pct`, `liquidity_usd`, `lock_pct`, `unlock_at`, `top1_pct`, `top1_type`, `deployer_pct`, `age_hours`, `price_impact_1k_usd`, `checked_at`, plus `api_version`. Full list: [/llms.txt](https://picklecheck.onrender.com/llms.txt) and [/openapi.json](https://picklecheck.onrender.com/openapi.json).
+- Key fields (in the `fields` object; null = not checked or not applicable; see the reason field, e.g. `can_sell_reason`): `action`, `score` (risk 0-100, lower is safer; null on VERIFY_MORE, see `score_reason`; top-level `risk_score` / `risk_score_reason` match), `can_sell`, `buy_tax_pct`, `sell_tax_pct`, `liquidity_usd`, `lock_pct`, `unlock_at`, `top1_pct`, `top1_type`, `deployer_pct`, `age_hours`, `price_impact_1k_usd`, `checked_at`, plus `api_version`. Full list: [/llms.txt](https://picklecheck.onrender.com/llms.txt) and [/openapi.json](https://picklecheck.onrender.com/openapi.json).
 - `summary.text`: a ready-to-show report, the same one used on Telegram ([@picklecheck_bot](https://t.me/picklecheck_bot)).
 - MCP server (tool `scam_check`) and ElizaOS, GOAT and AgentKit plugins: coming soon (see the table above).
 
