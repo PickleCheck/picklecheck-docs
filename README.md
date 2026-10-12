@@ -49,3 +49,7 @@ Not financial advice. Always do your own research.
 
 
 (c) 2026 PickleCheck. All rights reserved.
+
+## Terms / Disclaimer
+
+On-chain and public data at check time. As-is execution; may be incomplete or inaccurate. NFA. DYOR.
